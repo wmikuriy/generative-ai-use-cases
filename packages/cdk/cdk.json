@@ -15,7 +15,7 @@
     ]
   },
   "context": {
-    "env": "",
+    "env": "dev",
     "tagKey": null,
     "tagValue": null,
     "ragEnabled": false,
@@ -64,7 +64,7 @@
     "inlineAgents": false,
     "mcpEnabled": false,
     "flows": [],
-    "agentBuilderEnabled": false,
+    "agentBuilderEnabled": true,
     "createGenericAgentCoreRuntime": false,
     "agentCoreRegion": null,
     "agentCoreExternalRuntimes": [],

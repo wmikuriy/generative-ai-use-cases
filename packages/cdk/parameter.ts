@@ -23,6 +23,51 @@ const envs: Record<string, Partial<StackInput>> = {
   // },
   dev: {
     // Parameters for development environment
+    "modelRegion": "us-west-2",
+    agentEnabled: true,
+    inlineAgents: true,
+    // createGenericAgentCoreRuntime: true,
+    modelIds: [
+      "us.anthropic.claude-opus-4-1-20250805-v1:0",
+      "us.anthropic.claude-opus-4-20250514-v1:0",
+      "us.anthropic.claude-sonnet-4-20250514-v1:0",
+      "us.anthropic.claude-3-7-sonnet-20250219-v1:0",
+      "us.anthropic.claude-3-5-sonnet-20241022-v2:0",
+      "us.anthropic.claude-3-5-haiku-20241022-v1:0",
+      "us.anthropic.claude-3-5-sonnet-20240620-v1:0",
+      "us.amazon.nova-premier-v1:0",
+      "us.amazon.nova-pro-v1:0",
+      "us.amazon.nova-lite-v1:0",
+      "us.amazon.nova-micro-v1:0",
+      "cohere.command-r-plus-v1:0",
+      "cohere.command-r-v1:0",
+      "us.meta.llama4-maverick-17b-instruct-v1:0",
+      "us.meta.llama4-scout-17b-instruct-v1:0",
+      "us.deepseek.r1-v1:0",
+      "us.writer.palmyra-x5-v1:0",
+      "us.writer.palmyra-x4-v1:0",
+      // "openai.gpt-oss-120b-1:0",
+      // "openai.gpt-oss-20b-1:0"
+    ],
+    speechToSpeechModelIds:[
+      { modelId: 'amazon.nova-sonic-v1:0', region: 'us-east-1' },
+    ],
+    imageGenerationModelIds:[
+      { modelId: "amazon.nova-canvas-v1:0", region: 'us-east-1' },
+      "amazon.titan-image-generator-v2:0",
+      "amazon.titan-image-generator-v1",
+      "stability.sd3-5-large-v1:0",
+      "stability.stable-image-core-v1:1",
+      "stability.stable-image-ultra-v1:1",
+      // "stability.stable-diffusion-xl-v1",
+    ],
+    videoGenerationModelIds:[
+      { modelId: "amazon.nova-reel-v1:0", region: 'us-east-1' },
+      { modelId: "amazon.nova-reel-v1:1", region: 'us-east-1' },
+      "luma.ray-v2:0",
+    ],
+
+    
   },
   staging: {
     // Parameters for staging environment
